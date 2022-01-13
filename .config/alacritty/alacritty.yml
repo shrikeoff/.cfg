@@ -1,0 +1,86 @@
+env:
+  # Это значение используется для установки переменной среды `$TERM` 
+  # для каждого экземпляра Alacritty. Если он отсутствует, 
+  # alacritty проверяет локальную базу данных terminfo и использует      
+  # `alacritty` в случае его доступности, в противном случае   #задействуется `xterm- 256color`.
+  TERM: xterm-256color
+
+window:
+  # Равномерно распределяет дополнительные отступы вокруг #содержимого терминала.
+  padding:
+    x: 10
+    y: 10
+  # Удаляет кнопки
+  decorations: none
+  # Открывает в полный экран 
+  #startup_mode: SimpleFullscreen
+  # Dimensions, если не SimpleFullscreen
+  dimensions:
+    columns: 70
+    lines: 20
+
+# Делает фон немного прозрачным
+background_opacity: 0.9
+
+cursor:
+  # Block Underline или Beam
+  style: Block
+
+font:
+  normal:
+    # При использовании темы zsh с powerline должен быть установлен #шрифт powerline
+    family: Roboto Mono Nerd Font
+  # Размер шрифта
+  size: 11
+
+  # Улучшенная отрисовка шрифта для mac
+  use_thin_strokes: true
+
+# Цвета (Hyper)
+colors:
+  # Цвета по умолчанию
+  primary:
+    background: '#2b303b'
+    foreground: '#c0c5ce'
+  cursor:
+    text: '#2b303b'
+    cursor: '#c0c5ce'
+
+  # Нормальные цвета
+  normal:
+    black:   '#2b303b'
+    red:     '#bf616a'
+    green:   '#a3be8c'
+    yellow:  '#ebcb8b'
+    blue:    '#8fa1b3'
+    magenta: '#b48ead'
+    cyan:    '#96b5b4'
+    white:   '#c0c5ce'
+
+  # Яркие цвета
+  bright:
+    black:   '#c0c5ce'
+    red:     '#bf616a'
+    green:   '#a3be8c'
+    yellow:  '#ebcb8b'
+    blue:    '#8fa1b3'
+    magenta: '#b48ead'
+    cyan:    '#96b5b4'
+    white:   '#eff1f5'
+
+
+selection:
+  # Эта строка содержит все символы, используемые в качестве #разделителей для "semantic words" в Alacritty.
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+
+  # Когда true, выбранный текст будет скопирован в основной буфер #обмена
+  save_to_clipboard: true
+
+# Login shell с аргументами
+shell:
+  program: /bin/fish
+  args:
+    - --login
+
+# Директория запуска, unset или None для домашней директории
+working_directory: None
