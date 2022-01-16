@@ -5,6 +5,10 @@ set softtabstop=4
 set shiftwidth=4
 "set hlsearch
 set incsearch
+set autoread
+
+set autoindent
+set smartindent
 
 "set number
 set relativenumber
@@ -44,6 +48,6 @@ let g:Powerline_symbols='unicode' "Поддержка unicode
 let g:airline#extensions#xkblayout#enabled = 0 "Про это позже расскажу
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:user_emmet_leader_key='<TAB>'
+let g:user_emmet_leader_key='<C-Z>'
 let g:airline_theme='base16_ocean'
 

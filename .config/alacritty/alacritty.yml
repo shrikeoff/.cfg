@@ -44,7 +44,7 @@ colors:
     foreground: '#c0c5ce'
   cursor:
     text: '#2b303b'
-    cursor: '#c0c5ce'
+    cursor: '#eff1f5'
 
   # Нормальные цвета
   normal:
