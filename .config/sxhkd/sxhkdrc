@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-	rofi -show run -theme Arc-Dark
+    rofi -modi drun -theme slate -font "Roboto Nerd Font 13" -show drun -icon-theme "Papirus" -show-icons
 
 # make sxhkd reload its configuration files:
 super + Escape

@@ -78,7 +78,7 @@ selection:
 
 # Login shell с аргументами
 shell:
-  program: /bin/fish
+  program: /bin/zsh
   args:
     - --login
 

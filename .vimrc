@@ -7,6 +7,8 @@ set shiftwidth=4
 set incsearch
 set autoread
 
+set t_Co=256
+
 set autoindent
 set smartindent
 
@@ -50,4 +52,5 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:user_emmet_leader_key='<C-Z>'
 let g:airline_theme='base16_ocean'
+
 
