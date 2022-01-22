@@ -1,5 +1,3 @@
-# Created by newuser for 5.8
-
 autoload -U compinit promptinit
 compinit
 promptinit
@@ -16,21 +14,10 @@ HISTFILE=~/.zsh_history
 HISTSIZE=500000
 SAVEHIST=500000
 
-if [ -f /usr/bin/grc ]; then
- alias gcc="grc --colour=auto gcc"
- alias irclog="grc --colour=auto irclog"
- alias log="grc --colour=auto log"
- alias netstat="grc --colour=auto netstat"
- alias ping="grc --colour=auto ping"
- alias proftpd="grc --colour=auto proftpd"
- alias traceroute="grc --colour=auto traceroute"
- alias ls="grc --colour=auto ls"
-fi
-
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root)
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
 # append history
 setopt APPEND_HISTORY
@@ -38,11 +25,3 @@ setopt APPEND_HISTORY
 setopt HIST_IGNORE_ALL_DUPS
 # ighore additional space in history
 setopt HIST_IGNORE_SPACE
-
-autoload -U run-help
-autoload run-help-git
-autoload run-help-svn
-autoload run-help-svk
-unalias run-help
-alias help=run-help
-
